@@ -1,28 +1,25 @@
 # 🔐 PassQuest
 
-**Flex your password. Earn your legend.**
+A gamified password strength checker with cyberpunk vibes.
 
-PassQuest is a gamified CLI tool that evaluates password strength using entropy and regex rules. It transforms boring password checks into a fun quest, scoring your password from **Weak → Legendary** with a progress bar and colorized output.
+## 🚀 Download
+[![Download EXE](https://img.shields.io/badge/Download-PassQuest.exe-blue?style=for-the-badge)](https://github.com/YOUR_USERNAME/passquest/releases/latest/download/app.exe)
 
----
+Click the button above to download the latest PassQuest executable.
+
+## 🖼️ Logo
+![PassQuest Logo](static/images/logo.png)
 
 ## ✨ Features
-- Calculates password entropy (bits of unpredictability).
-- Checks for length, uppercase, lowercase, digits, and symbols.
-- Gamified scoring system with levels:
-  - Weak
-  - Decent
-  - Strong
-  - Epic
-  - Legendary
-- ASCII progress bar meter.
-- Colorized CLI output for instant feedback.
+- Entropy-based scoring
+- Gamified strength levels: Weak → Legendary
+- Neon loader, blurred background, and animated UI
+- Splash screen with glowing logo
+- Developed by Oliver Jackson, 2026 @OJLABS
 
----
-
-## 🚀 Usage
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/socwitholiver/passquest.git
-   cd passquest
+## 🛠️ Installation
+Clone the repo:
+```bash
+git clone https://github.com/socwithoj/passquest.git
+cd passquest
+pip install -r requirements.txt
