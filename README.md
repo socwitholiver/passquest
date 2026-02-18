@@ -3,7 +3,7 @@
 A gamified password strength checker with cyberpunk vibes.
 
 ## 🚀 Download
-[![Download EXE](https://img.shields.io/badge/Download-PassQuest.exe-blue?style=for-the-badge)](https://github.com/YOUR_USERNAME/passquest/releases/latest/download/app.exe)
+[![Download EXE](https://img.shields.io/badge/Download-PassQuest.exe-blue?style=for-the-badge)](https://github.com/socwitholiver/passquest/releases/latest/download/app.exe)
 
 Click the button above to download the latest PassQuest executable.
 
