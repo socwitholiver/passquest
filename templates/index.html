@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PassQuest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body onload="hideLoader()">
+    <!-- Loader -->
+    <div id="loader">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="PassQuest Logo" class="logo-img">
+        <p class="loading-text">Loading your quest...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" style="display:none;">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="PassQuest Logo" class="logo-img">
+        <form method="POST">
+            <input type="password" name="password" placeholder="Enter a password">
+            <button type="submit">Check Password</button>
+        </form>
+
+        {% if result %}
+        <div class="report">
+            <h2>Password Strength Report</h2>
+            <p>Entropy: {{ result.entropy }} bits</p>
+            <p style="color: {{ result.color }}">Strength Level: {{ result.level }}</p>
+            <div class="meter">
+                <div class="fill" style="width: {{ result.bar_width }}%; background: {{ result.color }}"></div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Footer -->
+        <footer>
+            <p>Developed by Oliver Jackson, 2026 @OJLABS</p>
+        </footer>
+    </div>
+
+    <script>
+        function hideLoader() {
+            setTimeout(() => {
+                const loader = document.getElementById("loader");
+                loader.style.opacity = "0";
+                loader.style.transition = "opacity 1s ease-out";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                }, 1000); // wait for fade-out
+            }, 4000); // loader stays for 4 seconds
+        }
+    </script>
+</body>
+</html>
