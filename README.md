@@ -18,10 +18,7 @@ Start PassQuest with:
 
 bash
 python app.py
-If you want to launch with the splash screen first:
 
-bash
-python splash.py
 📦 Requirements
 Your requirements.txt should include:
 
